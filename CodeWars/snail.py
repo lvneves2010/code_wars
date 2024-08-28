@@ -6,7 +6,8 @@ def snail(snail_map):
     newArr = []
     while fors > 0:
         for i in range( cycles, n - cycles ):
-            newArr.append(snail_map[cycles][i]);
+            if len(snail_map[cycles]) > 0:
+                newArr.append(snail_map[cycles][i]);
         fors = fors -1;
         if fors > 1:
             for a in range( cycles + 1, n - cycles ):
